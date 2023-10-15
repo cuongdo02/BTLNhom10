@@ -1,0 +1,247 @@
+@font-face {
+    font-family: "Open Sans";
+    src: url('../font/static/OpenSans-Regular.ttf');
+}
+@font-face{
+    font-family: "Open Sans";
+    src: url('../font/static/OpenSans-Light.ttf');
+    font-weight: 300;
+}
+@font-face{
+    font-family: "Open Sans";
+    src: url('../font/static/OpenSans-LightItalic.ttf');
+    font-weight: 300;
+    font-style: italic;
+}
+@font-face{
+    font-family: "Open Sans";
+    src: url('../font/static/OpenSans-Regular.ttf');
+    font-weight: 400;
+}
+
+*{
+    font-family: "Open Sans";
+}
+
+body{
+    margin: 0;
+}
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#logo{
+    max-width: 244px;
+    margin-top: 12px;
+    margin-bottom: 17px;
+}
+.btn{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    height: 50px;
+    width: 195px;
+    border-radius: 5px;
+    line-height: 50px;
+    font-size: 14px;
+    position: relative;
+    padding-left: 52px;
+    box-sizing: border-box;
+}
+.btn img{
+    position: absolute;
+    left: 9px;
+    top: 10px;
+}
+.btn-store{
+background-color: #1790cf;
+}
+.btn-visit{
+background-color: #e3b58e;
+margin-right: 24px;
+margin-left: 20px;
+}
+.cart{
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    padding-right: 60px;
+}
+.cart img{
+    vertical-align: middle;
+}
+.text_cart{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.quantity{
+    display: block;
+    position: absolute;
+    color: white;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    font-size: 12px;
+    text-align: center;
+    line-height: 18px;
+    top: -3px;
+    left: 42px;
+    background-color: red;
+
+}
+nav{
+    background-color: #eeecec;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+}
+.menu{
+    display: flex;
+    align-items: center;
+}
+.menu li a{
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    color: #525151;
+    padding: 11px 10px;
+}
+.menu li a.active, .menu li a:hover{
+    background-color: #1790cf;
+    color: #ffffff;
+}
+.form_search{
+    display: flex;
+    margin-left: 35px;
+    align-items: center;
+
+}
+
+.form_search input{
+    width: 217px;
+    height: 33px;
+    box-sizing: border-box;
+    border: 1px solid #d9d6d6;
+}
+.form_search input:focus{
+    outline: unset;
+}
+.form_search button{
+    height: 33px;
+    box-sizing: border-box;
+    width: 36px;
+    text-align: center;
+    line-height: 30px;
+    color: #ffffff;
+    padding: 0;
+    background-color: #1790cf;
+    font-size: 17px;
+    border: 1px solid #1790cf;
+
+}
+.slider{
+    display: flex;
+}
+.slider_left, .slider_right{
+    width: 50%;
+}
+.slider_item{
+    position: relative;
+}
+.slider_item span{
+    position: absolute;
+    color: #ffffff;
+    font-size: 70px;
+    top: 45%;
+    left: 45%;
+    opacity: 0.6;
+}
+.custom-prev{
+    position: absolute;
+    left: 30px;
+    top: 45%;
+    font-size: 40px;
+    background-color: unset;
+    border: 0;
+    z-index: 1;
+    color: white;
+}
+.custom-next{
+    position: absolute;
+    right: 30px;
+    top: 45%;
+    background-color: unset;
+    border: 0;
+    font-size: 35px;
+    color: white;
+}
+.content{
+    margin-top: 60px;
+
+}
+.content > h1{
+    text-align: center;
+    font-weight: bold;
+    font-family: "OpenSans";
+    text-transform: uppercase;
+    margin: 0;
+    font-size: 40px;
+}
+.content > p.note{
+    text-align: center;
+    font-size: 16px;
+    margin: 0;
+}
+.list{
+    margin-top: 39px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.list .item{
+    width: calc(100%/3);
+    box-sizing: border-box;
+    padding: 0 15px;
+    margin-bottom: 30px;
+}
+.list .item .info >a{
+    display: block;
+    overflow: hidden;
+}
+.list .item .info > div{
+    padding: 15px;
+}
+.list .item .info h2{
+    margin-top: 24px;
+    margin-bottom: 14px;
+}
+.list .item .info h2 a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    
+}
+.view_more{
+    text-decoration: none;
+    color: #1790cf;
+}
+.view_more i{
+    margin-left: 15px;
+}
+footer{
+    margin: 0;
+    margin-left: 895px;
+}
